@@ -1,0 +1,64 @@
+<title>Contacto - Telefonia</title>
+<html lang="es">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Telefonia</title>
+<main>
+    <h1>Contacto</h1>
+    <p>Si deseas ponerte en contacto con nosotros, por favor completa el siguiente formulario:</p>
+<form action="#" method="post" aria-label="Formulario de contacto">
+    <fieldset>
+ <legend>Datos personales</legend>
+    <p>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"
+        required minlength="3" maxlength="60"
+        placeholder="Ej: Pablo Zambrano">
+    </p>
+    <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"
+        required placeholder="correo@ejemplo.com">
+    </p>
+    <p>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"
+        pattern="[0-9]{10}"
+        title="Ingresa 10 dígitos sin espacios"
+        placeholder="0999999999">
+    </p>
+    <p>
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">Acepto que se almacenen mis datos.</label>
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>Tu mensaje</legend>
+    <p>
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto" required>
+        <option value="">-- Selecciona una opción --</option>
+        <option value="colaboracion">Propuesta de colaboración</option>
+        <option value="trabajo">Oferta de trabajo</option>
+        <option value="consulta">Consulta general</option>
+        <option value="otro">Otro</option>
+        </select>
+    </p>
+    <p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"
+        rows="5" cols="40"
+        required minlength="30"
+        placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+    </p>
+    </fieldset>
+    <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </p>
+</form>
+
+<footer>
+    <p>© 2026 Telefonia. Todos los derechos reservados.</p>
+</footer>
